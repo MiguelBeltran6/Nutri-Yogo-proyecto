@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
   <link rel="stylesheet" href="./css/style-pagina.css">
+  <link rel="stylesheet" href="./javascript.js">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
@@ -110,21 +111,24 @@
           <p class="tex">Un yogur elaborado con leche, maracuyá, algarroba y cultivos lácticos ofrece múltiples beneficios nutricionales y funcionales, ya que combina las propiedades de cada ingrediente. La leche aporta proteínas de alta calidad, calcio y vitaminas esenciales para fortalecer los huesos y los músculos; el maracuyá proporciona vitamina C, vitamina A, antioxidantes y fibra, que ayudan a fortalecer el sistema inmunológico y mejorar la digestión; la algarroba añade fibra, minerales y un sabor naturalmente dulce que permite reducir el uso de azúcar; y los cultivos lácticos actúan como probióticos, favoreciendo el equilibrio de la microbiota intestinal, mejorando la digestión y contribuyendo a una mejor absorción de nutrientes. En conjunto, estos ingredientes dan como resultado un yogur nutritivo, de buen sabor y textura, que puede contribuir al bienestar digestivo, al fortalecimiento del sistema inmunológico y a una alimentación saludable.</p>
         <h4>Hacemos domicilios a toda Bogota</h4>
       </section>
-      <section>
-        <h2>Contacto</h2>
-        <form>
-          <fieldset>
-            <legend>Formulario de contacto</legend>
+      <section >
+        <h2 id="contacto">Contacto</h2>
+        <form id="form1">
+          <fieldset class="tabla">
             <label>
               Nombre:
-              <input type="text" required>
+              <input class ="input" type="text" required>
             </label>
             <label>
               Correo:
-              <input type="email" required>
+              <input class ="input" type="email" required>
             </label>
           </fieldset>
-          <button>Enviar</button>
+          <button class="botones">
+             <a class="txtbot">Enviar 
+              <i class="fi fi-sr-arrow-right"></i>
+            </a>
+          </button>
         </form>
       </section>
       <section>
@@ -132,19 +136,18 @@
       </section>
       <section>
         <form>
-          <fieldset>
-            <legend>Formulario para hacer domicilios</legend>
+          <fieldset class="tabla">
              <label>
                 Producto:
-                <input type="text">
+                <input class ="input" type="text">
               </label>
               <label>
                 Direccion:
-                <input type="text">
+                <input class ="input" type="text">
               </label>
-              <label>
+              <label id="pago">
                 Medio de pago: 
-                <select name="pago" id="pago">
+                <select name="pago" >
                   <option value="Nequi">Nequi</option>
                   <option value="Daviplata">Daviplata</option>
                   <option value="Efectivo">Contra entrega</option>
@@ -152,18 +155,21 @@
                 </select>
               </label>
           </fieldset>
-          <button>Enviar</button>
+          <button class="botones">
+               <a class="txtbot">Enviar 
+              <i class="fi fi-sr-arrow-right"></i>
+            </button>
         </form>
       </section>
   </main>
-  <footer>
-    <p>Copyright of 2026</p>
-    <h4>Redes sociales:</h4>
+  <footer id="pie">
     <ul>
-      <li>Facebook</li>
-      <li>Tik tok</li>
-      <li>Instagram</li>
-      <li>X</li>
+    <ol>Copyright of 2026</ol>
+    <ol><h4>Redes sociales:</h4></ol>
+      <ol>Facebook</ol>
+      <ol>Tik tok</ol>
+      <ol>Instagram</ol>
+      <ol>X</ol>
     </ul>
   </footer>
 </body>
